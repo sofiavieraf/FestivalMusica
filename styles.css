@@ -1,38 +1,47 @@
-*{
-    font-family: 'Montserrat', sans-serif ;
-    color: #fff;
+* {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
 }
-body{
-    margin: 0;
-    background-color: #767373;
+body {
+  margin: 0;
+  background-color: #767373;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.calculadora{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 15px;
-    overflow: hidden;
+.calculadora {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .display {
-    grid-column: 5 / 1;
-    flex-direction: column;
-    /* border-radius: 5px; */
-    background-color: #f1f3f8;
-    height: 100px;
-    margin-top: -20px;
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-bottom: 20px;
+  grid-column: 5 / 1;
+  flex-direction: column;
+  /* border-radius: 5px; */
+  background-color: #f1f3f8;
+  height: 100px;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+}
+.input-display {
+  height: 100%;
+  border: none;
+  background-color: #f1f3f8;
+  color: black;
+  font-size: 20px;
+  text-align: end;
+  padding: 0;
 }
 
-button{
+button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -40,35 +49,27 @@ button{
   margin: 2px;
   color: rgb(64, 61, 61);
   cursor: pointer;
-  font-size: 15px;
+  font-size: 18px;
   background-color: #f3f5f8;
 }
-.numero:active{
-    background-color: #e0e1e3;  
+.numero:active {
+  background-color: #e0e1e3;
 }
 .operador-verde {
-    background-color: rgb(171, 226, 208);
+  background-color: rgb(171, 226, 208);
 }
-.operador-celeste{
-    background-color: rgb(185, 223, 247);
+.operador-celeste {
+  background-color: rgb(185, 223, 247);
 }
-.operador-azulclaro{
-    background-color: rgb(195, 216, 244);
+.operador-azulclaro {
+  background-color: rgb(195, 216, 244);
 }
-.operador-verde:active{
-    background-color: rgb(144, 193, 177);
+.operador-verde:active {
+  background-color: rgb(144, 193, 177);
 }
-.operador-celeste:active{
-    background-color: rgb(157, 195, 219);
+.operador-celeste:active {
+  background-color: rgb(157, 195, 219);
 }
-.operador-azulclaro:active{
-    background-color: rgb(170, 188, 213);
-}
-.display-operacion {
-    font-size: 12px;
-    color: black;
-}
-.display-resultado {
-    font-size: 17px;
-    color: #767373;
+.operador-azulclaro:active {
+  background-color: rgb(170, 188, 213);
 }
